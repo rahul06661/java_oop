@@ -1,12 +1,4 @@
 
-
----------- Forwarded message ---------
-From: 37 Rintu Raju <rinturaju2023@mca.sjcetpalai.ac.in>
-Date: Mon, Apr 4, 2022 at 3:20 PM
-Subject: Complex Numbers
-To: 36_Reshma Roy <reshmaroy2023@mca.sjcetpalai.ac.in>
-
-
 import java.util.Scanner;
 class ComplexNumbers
 {
@@ -17,7 +9,7 @@ class ComplexNumbers
         real=r;
         img=i;
     }
-    public void addition()
+    public void display()
     {
         System.out.println(real+"+i"+img);
     }
@@ -37,14 +29,14 @@ class ComplexNumbers
         r1=sc.nextInt();
         i1=sc.nextInt();
         ComplexNumbers n1=new ComplexNumbers(r1,i1);
-        n1.addition();
+        n1.display();
         System.out.println("Enter the real and imaginary part");
         r2=sc.nextInt();
         i2=sc.nextInt();
         ComplexNumbers n2=new ComplexNumbers(r2,i2);
-        n2.addition();
+        n2.display();
         System.out.println("Sum of the numbers=");
         ComplexNumbers r3=add(n1,n2);
-        r3.addition();
+        r3.display();
     }
 }
